@@ -1,6 +1,6 @@
 from .models import Task
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 
 # Create your views here.
 def addTask(request):
@@ -20,3 +20,6 @@ def mark_as_undone(request, pk):
     task.is_completed = False
     task.save()
     return redirect('home')
+
+def edit_tash(request, pk):
+    return render(request, 'edit_task.html')
