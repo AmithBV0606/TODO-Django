@@ -7,5 +7,5 @@ urlpatterns = [
     path('mark_as_undone/<int:pk>/', views.mark_as_undone, name='mark_as_undone'),
 
     # Edit 
-    path('edit_task/<int:pk>', views.edit_tash, name='edit_task')
+    path('edit_task/<int:pk>', views.edit_task, name='edit_task')
 ]

@@ -21,7 +21,7 @@ def mark_as_undone(request, pk):
     task.save()
     return redirect('home')
 
-def edit_tash(request, pk):
+def edit_task(request, pk):
     get_task = get_object_or_404(Task, pk=pk)
     if request.method == 'POST':
         return
