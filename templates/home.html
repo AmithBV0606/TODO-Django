@@ -39,9 +39,16 @@
                     <div class="card-body">
                         {{ task.task }}
                         <span style="position: relative; float: right;">
-                            <a class="btn btn-success"><i class="fa fa-check"></i> Mark as Done</a>
-                            <a class="btn btn-danger"><i class="fa fa-trash"></i></a>
-                            <a class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+                            <a class="btn btn-success" href="{% url 'mark_as_done' task.pk %}">
+                                <i class="fa fa-check"></i>
+                                Mark as Done
+                            </a>
+                            <a class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                            <a class="btn btn-primary">
+                                <i class="fa fa-pencil"></i>
+                            </a>
                         </span>
                     </div>
                 </div>
@@ -70,12 +77,12 @@
                     <!-- Cross Site Request Forgery -->
                     <div class="form-group">
                         <span style="display: flex; gap: 15px;">
-                            <div class="form-floating mb-3" style="width: 1200px;">
+                            <div class="form-floating mb-3" style="width: 640px;">
                                 <input type="text" name="task" class="form-control text-bg-dark text-white"
                                     id="floatingInput" placeholder="Complete assignment">
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-sm" style="width: 200px; height: 60px;">
+                            <button type="submit" class="btn btn-primary btn-sm" style="width: 100px; height: 60px;">
                                 <i class="fa fa-plus"></i>
                                 Add
                             </button>
