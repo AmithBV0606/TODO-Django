@@ -4,6 +4,7 @@ from .models import Task
 # To display the column name on the tasks table on the admins screen :
 class TaskAdmin(admin.ModelAdmin):
     list_display = ('task', 'is_completed', 'updated_at')
+    search_fields = ('task',)
 
 # Register your models here.
 admin.site.register(Task, TaskAdmin)
