@@ -51,11 +51,13 @@
             <div class="col-md-5 col-lg-5">
                 <h5 class="text-secondary">Completed Tasks</h5>
                 <!-- List of all the tasks that have completed -->
+                {% for task in completed_tasks %}
                 <div class="card m-1 text-bg-dark">
                     <div class="card-body">
-                        This is the completed task.
+                        {{ task.task }}
                     </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
 
