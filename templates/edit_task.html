@@ -21,7 +21,7 @@
     <div class="container">
         <h3 class="pt-5 pb-5 text-center text-secondary-emphasis">TODO LIST - EDIT TASK</h3>
 
-        <form action="" method="POST" style="width: 800px; margin: auto;">
+        <form action="{% url 'edit_task' get_task.pk %}" method="POST" style="width: 800px; margin: auto;">
             {% csrf_token %}
             <div class="form-group text-center">
                 <span style="display: flex; gap: 15px;">
