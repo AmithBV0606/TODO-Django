@@ -165,37 +165,6 @@ This project helped me learn:
 - CSRF protection
 - Static files management
 
-## Future Enhancements 🚧
-
-- [ ] User authentication and authorization
-- [ ] Task categories and labels
-- [ ] Due dates and reminders
-- [ ] Task priority levels
-- [ ] Search and filter functionality
-- [ ] User profiles and settings
-- [ ] RESTful API development
-- [ ] Task sharing between users
-
-## Contributing 🤝
-
-This is a learning project, but suggestions and improvements are welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License 📄
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Contact 📧
-
-**Amith BV** - [Your Email](mailto:your.email@example.com)
-
-Project Link: [https://github.com/AmithBV0606/TODO-Django](https://github.com/AmithBV0606/TODO-Django)
-
 ## Acknowledgments 🙏
 
 - Django Documentation
